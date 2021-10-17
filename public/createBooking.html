@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startwork | Create Bookings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="font-inter">
+    <header>
+        <div class="relative z-20 shadow flex items-center justify-between bg-white py-5 px-28">
+            <div>
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a class="" href="#">
+                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                        <img class="w-full" src="assets/avatar.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-0 bg-gray-50 px-20">
+        <!-- breadcrumb -->
+        <nav class="border-b border-gray-200 flex pt-6 pb-4" aria-label="Breadcrumb">
+            <ol role="list" class="w-full mx-auto px-4 flex space-x-4">
+
+              <li class="flex">
+                <div class="flex items-center">
+                  <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-brand-blue">Bookings</a>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="flex items-center">
+                  <svg class="flex-shrink-0 w-6 h-full text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
+                  </svg>
+                  <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-brand-blue" aria-current="page">Create a job booking</a>
+                </div>
+              </li>
+            </ol>
+        </nav>
+
+        <!-- form part one -->
+        <div class="parent pt-8">
+            <div>
+                <h1 class="font-medium text-lg text-gray-900 pb-1">Create a job booking</h1>
+                <p class="text-sm text-gray-500 pb-6">You can create single or multiple jobs when the schedule for each worker is the same.</p>
+            </div>
+
+            <form class="border-b border-gray-200 pb-20" action="">
+                <div class="flex items-center w-full space-x-6 pb-6">
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Company name</label>
+                        <div class="mt-1">
+                          <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Job title</label>
+                        <div class="mt-1">
+                          <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center w-full space-x-6 pb-6">
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Start date</label>
+                        <div class="mt-1">
+                          <input class="shadow-sm block w-3/5 h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="00/00/00">
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Finish date</label>
+                        <div class="mt-1">
+                          <input class="shadow-sm block w-3/5 h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="00/00/00">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center w-full space-x-6 pb-6">
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Ongoing job</label>
+                        <div class="mt-1">
+                            <button type="button" class="toggle bg-gray-200 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" role="switch" aria-checked="false">
+                                <span class="sr-only">Use setting</span>
+                                <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Finish date</label>
+                        <div class="mt-1">
+                            <button type="button" class="toggle bg-gray-200 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" role="switch" aria-checked="false">
+                                <span class="sr-only">Use setting</span>
+                                <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center w-full space-x-6 pb-6">
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Number of roles</label>
+                        <div class="mt-1">
+                          <select class="shadow-sm block w-3/5 h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" name="" id="">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Reporting to</label>
+                        <div class="mt-1">
+                          <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- continue button -->
+            <div class="flex justify-end pt-5 pb-10">
+                <button class="continue font-medium text-sm text-white bg-brand-blue rounded py-1.5 px-4">Continue</button>
+            </div>
+        </div>
+
+        <!-- form part two -->
+        <div class="parent hidden pt-8">
+            <div class="border-b border-gray-200 pb-6">
+                <h1 class="font-medium text-lg text-gray-900 pb-1">Job schedule</h1>
+                <p class="text-sm text-gray-500 pb-6">You can set the schedule for any kind of job here. You can change this at any time and choose whether the break will be paid or unpaid on the timesheets.</p>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 pb-8">
+                <a class="flex items-center font-medium text-sm text-gray-300 space-x-3.5" href="#">
+                    <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70711 9.70711C5.31658 10.0976 4.68342 10.0976 4.2929 9.70711L0.292894 5.70711C-0.0976312 5.31658 -0.0976312 4.68342 0.292894 4.29289L4.29289 0.292894C4.68342 -0.0976312 5.31658 -0.0976312 5.70711 0.292894C6.09763 0.683417 6.09763 1.31658 5.70711 1.70711L3.41421 4L15 4C15.5523 4 16 4.44771 16 5C16 5.55228 15.5523 6 15 6L3.41421 6L5.70711 8.29289C6.09763 8.68342 6.09763 9.31658 5.70711 9.70711Z" fill="currentColor"/>
+                    </svg>
+                    <p>Previous</p>
+                </a>
+
+                <div>
+                    <p class="font-medium text-sm text-gray-300"><span>00/00/00</span> - <span>00/00/00</span></p>
+                </div>
+
+                <a class="flex items-center font-medium text-sm text-gray-500 space-x-3.5" href="#">
+                    <p>Next</p>
+                    <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 0.292893C10.6834 -0.0976311 11.3166 -0.0976311 11.7071 0.292893L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L11.7071 9.70711C11.3166 10.0976 10.6834 10.0976 10.2929 9.70711C9.90238 9.31658 9.90238 8.68342 10.2929 8.29289L12.5858 6H1C0.447716 6 -2.41411e-08 5.55228 0 5C2.41411e-08 4.44772 0.447716 4 1 4H12.5858L10.2929 1.70711C9.90238 1.31658 9.90238 0.683418 10.2929 0.292893Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- table -->
+            <div class="pb-6">
+                <!-- week days -->
+                <div class="flex items-center justify-between px-20 pb-8">
+                    <button class="font-medium text-sm text-brand-blue">Monday</button>
+                    <button class="font-medium text-sm text-brand-blue">Tuesday</button>
+                    <button class="font-medium text-sm text-brand-blue">Wednesday</button>
+                    <button class="font-medium text-sm text-gray-500 hover:text-brand-blue">Thursday</button>
+                    <button class="font-medium text-sm text-gray-500 hover:text-brand-blue">Friday</button>
+                    <button class="font-medium text-sm text-gray-500 hover:text-brand-blue">Saturday</button>
+                    <button class="font-medium text-sm text-gray-500 hover:text-brand-blue">Sunday</button>
+                </div>
+
+                <div class="box-shadow rounded-lg bg-white divide-y divide-gray-300">
+                    <div class="flex items-center justify-around rounded-t-lg bg-gray-50">
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">day of week</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">job start</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">Break Start</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">Break finish</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">job finish</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">Pay rate</p>
+                        <p class="font-medium text-xs text-gray-500 uppercase py-3">Charge rate</p>
+                    </div>
+
+                   <form action="">
+                        <div class="flex items-center justify-around">
+                            <p class="text-sm text-gray-500 w-56 flex-shrink-0 py-4 pl-6">Monday</p>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-around">
+                            <p class="text-sm text-gray-500 w-56 py-4 pl-6">Tuesday</p>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-around">
+                            <p class="text-sm text-gray-500 w-56 py-4 pl-6">Wednesday</p>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <input class="text-gray-500 bg-gray-50 border-none w-full py-1" type="text" name="" id="" placeholder="00:00">
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300 w-44">
+                                <div class="relative flex items-center text-gray-500 bg-gray-50">
+                                    <p class="absolute top-2-0 left-2">£</p>
+                                    <input class="bg-gray-50 border-none w-full py-1 pl-5" type="text" name="" id="" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                   </form>
+
+                </div>
+            </div>
+
+            <!-- toggles -->
+            <div class="flex items-start space-x-20 border-b border-gray-300 pb-6">
+                <div>
+                    <p class="font-medium text-sm text-gray-700 pb-1.5">Replicate schedule for duration</p>
+                    <button type="button" class="toggle bg-gray-200 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" role="switch" aria-checked="false">
+                        <span class="sr-only">Use setting</span>
+                        <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+
+                <div>
+                    <p class="font-medium text-sm text-gray-700 pb-1.5">Paid breaks</p>
+                    <button type="button" class="toggle bg-gray-200 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" role="switch" aria-checked="false">
+                        <span class="sr-only">Use setting</span>
+                        <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- continue button -->
+            <div class="flex justify-end space-x-3 pt-5 pb-10">
+                <button class="back font-medium text-sm text-white bg-brand-blue rounded py-1.5 px-4">Back</button>
+                <button class="continue font-medium text-sm text-white bg-brand-blue rounded py-1.5 px-4">Continue</button>
+            </div>
+        </div>
+
+        <!-- form part three -->
+        <div class="parent hidden pt-8">
+            <div class="border-b border-gray-200 pb-6">
+                <h1 class="font-medium text-lg text-gray-900 pb-1">Job Specifics</h1>
+                <p class="text-sm text-gray-500 pb-6">You can create single or multiple jobs when the schedule for each worker is the same.</p>
+            </div>
+
+            <!-- form -->
+            <form class="pt-6" action="">
+                <div class="pb-6">
+                    <label class="font-medium text-sm text-gray-700" for="">Job description</label>
+                    <div class="pt-4">
+                        <textarea class="border border-gray-300 rounded-lg w-full" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="w-full pb-6">
+                    <label for="first-name" class="block text-sm font-medium text-gray-700">Street name</label>
+                    <div class="mt-1">
+                      <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center space-x-6 pb-8">
+                    <div class="w-full">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">City</label>
+                        <div class="mt-1">
+                            <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Country</label>
+                        <div class="mt-1">
+                            <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Post Code</label>
+                        <div class="mt-1">
+                            <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="first-name" id="first-name" autocomplete="given-name">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium text-sm text-gray-700 pb-8">Assign a worker</p>
+                    <div class="flex items-start w-2/3 border border-gray-300 rounded-md bg-white space-x-3.5 py-2 px-2">
+                        <svg class="flex-shrink-0 mt-2" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 9.5H5.5C3.9375 9.54167 2.64583 10.0833 1.625 11.125C0.583333 12.1458 0.0416667 13.4375 0 15C0 15.2917 0.09375 15.5312 0.28125 15.7188C0.46875 15.9062 0.708333 16 1 16H13C13.2917 16 13.5312 15.9062 13.7188 15.7188C13.9062 15.5312 14 15.2917 14 15C13.9583 13.4375 13.4167 12.1458 12.375 11.125C11.3542 10.0833 10.0625 9.54167 8.5 9.5ZM1.53125 14.5C1.67708 13.5 2.11458 12.6667 2.84375 12C3.57292 11.3542 4.45833 11.0208 5.5 11H8.5C9.54167 11.0208 10.4271 11.3542 11.1562 12C11.8854 12.6667 12.3229 13.5 12.4688 14.5H1.53125ZM7 8C8.125 7.97917 9.07292 7.59375 9.84375 6.84375C10.5938 6.07292 10.9792 5.125 11 4C10.9792 2.875 10.5938 1.92708 9.84375 1.15625C9.07292 0.40625 8.125 0.0208333 7 0C5.875 0.0208333 4.92708 0.40625 4.15625 1.15625C3.40625 1.92708 3.02083 2.875 3 4C3.02083 5.125 3.40625 6.07292 4.15625 6.84375C4.92708 7.59375 5.875 7.97917 7 8ZM7 1.5C7.70833 1.52083 8.30208 1.76042 8.78125 2.21875C9.23958 2.69792 9.47917 3.29167 9.5 4C9.47917 4.70833 9.23958 5.30208 8.78125 5.78125C8.30208 6.23958 7.70833 6.47917 7 6.5C6.29167 6.47917 5.69792 6.23958 5.21875 5.78125C4.76042 5.30208 4.52083 4.70833 4.5 4C4.52083 3.29167 4.76042 2.69792 5.21875 2.21875C5.69792 1.76042 6.29167 1.52083 7 1.5Z" fill="#9CA3AF"/>
+                        </svg>
+                        <div class="w-full divide-y divide-gray-300">
+                            <input class="w-full border-none text-sm pb-1 px-2" type="text" name="" id="" placeholder="Type to assign">
+                            <p class="text-brand-text-gray text-sm pt-1"><span>0/3</span> Positions</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- continue button -->
+            <div class="flex justify-end space-x-3 pt-5 pb-10">
+                <button class="back font-medium text-sm text-white bg-brand-blue rounded py-1.5 px-4">Back</button>
+                <button class="continue font-medium text-sm text-white bg-brand-blue rounded py-1.5 px-4">Continue</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

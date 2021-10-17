@@ -1,0 +1,22 @@
+{
+  "name": "startWork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set TAILWIND_MODE=watch&postcss src/styles.css -o ./public/css/styles.css -w --verbose",
+    "build": "postcss tailwindcss ./src/styles.css -o ./public/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/line-clamp": "^0.2.2"
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startwork | Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="h-screen font-inter">
+    <header>
+        <div class="relative z-20 flex items-center justify-between shadow bg-white py-5 px-28">
+            <div>
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a class="" href="#">
+                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                        <img class="w-full" src="assets/avatar.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-0 bg-gray-50 h-90 px-20">
+        <div class="px-4">
+            <div class="pt-6 pb-40">
+                <!-- top nav and buttons -->
+                <div class="pb-5">
+                    <h1 class="font-medium text-lg text-gray-900 pb-4">Settings</h1>
+                    <div class="space-x-10 border-b w-full">
+                        <button data-tab-target="#account" class="tab active font-medium text-sm text-gray-500 border-b border-gray-50 hover:border-brand-blue hover:text-brand-blue transition ease-in-out pb-4">Account</button>
+                        <button data-tab-target="#addStaff" class="tab font-medium text-sm text-gray-500 border-b border-gray-50 hover:border-brand-blue hover:text-brand-blue transition ease-in-out pb-4">Add staff account</button>
+                    </div>
+                </div>
+
+                <!-- account content -->
+                <div id="account" data-tab-content class="active pt-6">
+                    <form class="border-t border-gray-300 pt-5" action="">
+                        <div class="border-b border-gray-300 pb-5">
+                            <div class="w-2/3 flex items-center justify-between">
+                                <label class="font-medium text-sm text-gray-700" for="">Full name</label>
+                                <div class="w-500">
+                                    <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="text" name="" id="" autocomplete="given-name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-300 py-5">
+                            <div class="w-2/3 flex items-center justify-between">
+                                <label class="font-medium text-sm text-gray-700" for="">Email address</label>
+                                <div class="w-500">
+                                    <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="email" name="" id="" autocomplete="given-name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b border-gray-300 py-5">
+                            <div class="w-2/3 flex items-center justify-between pb-6">
+                                <label class="font-medium text-sm text-gray-700" for="">Current password</label>
+                                <div class="w-500">
+                                    <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="password" name="" id="" autocomplete="given-name">
+                                </div>
+                            </div>
+                            <div class="w-2/3 flex items-center justify-between">
+                                <label class="font-medium text-sm text-gray-700" for="">New password</label>
+                                <div class="w-500">
+                                    <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="password" name="" id="" autocomplete="given-name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-end pt-5">
+                            <input class="font-medium text-sm text-white bg-brand-blue rounded cursor-pointer py-1.5 px-4" type="submit" value="Save">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- add staff account content -->
+                <div id="addStaff" data-tab-content class="pt-6">
+                    <form class="border-t border-gray-300 pt-5" action="">
+                        <div class="border-b border-gray-300 pb-5">
+                            <div class="w-2/3 flex items-center justify-between">
+                                <label class="font-medium text-sm text-gray-700" for="">Add staff by email</label>
+                                <div class="flex items-center space-x-7">
+                                    <div class="w-500">
+                                        <input class="shadow-sm block w-full h-9 sm:text-sm border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" type="email" name="" id="" autocomplete="given-name">
+                                    </div>
+                                    <div class="">
+                                        <input class="font-medium text-sm text-white bg-brand-blue rounded cursor-pointer py-1.5 px-4" type="submit" value="Invite">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
