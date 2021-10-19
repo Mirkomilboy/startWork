@@ -26,7 +26,9 @@
 
             <div class="flex items-center space-x-4">
                 <a class="block text-brand-blue text-sm border border-brand-blue rounded-3xl hover:bg-brand-blue/10 transition ease-in-out py-2 px-3" href="#">Pricing</a>
-                <a class="block text-white text-sm bg-brand-blue border border-brand-blue rounded-3xl hover:bg-brand-blue/90 transition ease-in-out py-2 px-3" href="#">Contact Us</a>
+                <button type="button" class="inline-flex items-center border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-brand-blue hover:bg-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue px-3 py-2">
+                    Contact Us
+                </button>
             </div>
         </div>
     </header>
@@ -36,7 +38,10 @@
             <h1 class="text-5xl text-brand-blue font-semibold text-center pb-6">Manage schedules, job bookings & timesheets</h1>
             <p class="text-sm text-brand-blue text-center pb-6">Replace excel and sheets with simple to use software for temporary recruitment agencies</p>
             <div class="flex justify-center">
-                <a class="text-sm font-bold text-white bg-brand-blue rounded-3xl text-center hover:bg-brand-blue/90 transition ease-in-out py-3 px-6" href="#">Book a demo</a>
+                <button type="button" class="inline-flex items-center border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-brand-blue hover:bg-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue px-3 py-2">
+                    Book a demo
+                </button>
+                <!-- <a class="text-sm font-bold text-white bg-brand-blue rounded-3xl text-center hover:bg-brand-blue/90 transition ease-in-out py-3 px-6" href="#">Book a demo</a> -->
             </div>
         </div>
 
@@ -71,18 +76,16 @@
 
                     <div class="flex space-x-3 flex-shrink-0 pl-4">
                         <!-- dropdown -->
-                        <div class="relative">
-                            <div class="dropBtn flex items-center text-white bg-brand-blue rounded-md flex-shrink-0 cursor-pointer divide-x divide-gray-400 px-4">
-                                <p class="font-medium text-sm py-2.5 pr-2">Plan dropdown</p>
-                                <div class="py-2.5 pl-2">
-                                    <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </div>
-                            </div>
+                        <div class="relative inline-block text-left">
+                            <button class="dropBtn bg-brand-blue hover:bg-brand-blue/90 inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium text-white focus:outline-none divide-x divide-gray-400" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                <p class="pointer-events-none">Plan dropdown</p>
+                                <svg class="pointer-events-none -mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
 
-                            <div class="dropContent hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                                <div class="border-b border-gray-300">
+                            <div class="dropContent hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                <div>
                                     <div class="group flex items-center justify-between hover:bg-gray-100 px-4 py-2">
                                         <a href="#" class="text-gray-700 block text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Plan 1</a>
                                         <button class="hidden group-hover:block">
@@ -99,14 +102,20 @@
                                             </svg>
                                         </button>
                                     </div>
+
                                     <div class="content"></div>
                                 </div>
                                 <button class="createPlan text-gray-700 text-sm w-full text-left hover:bg-gray-100 px-4 py-2">Create new plan</button>
                             </div>
                         </div>
 
-                        <a class="font-medium text-white text-sm bg-brand-blue rounded-md flex-shrink-0 py-2.5 px-4" href="#">Create Booking</a>
-                        <a class="font-medium text-white text-sm bg-brand-blue rounded-md flex-shrink-0 py-2.5 px-4" href="#">Add Column</a>
+
+                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-brand-blue hover:bg-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Create Booking
+                        </button>
+                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-brand-blue hover:bg-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Add Column
+                        </button>
                     </div>
                 </div>
 
@@ -201,7 +210,9 @@
 
                                 <!-- edit btn -->
                                 <div class="flex justify-end">
-                                    <a class="font-medium text-xs border rounded inline-block py-1.5 px-3 mb-2" href="#">Edit</a>
+                                    <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none">
+                                        Edit
+                                      </button>
                                 </div>
                             </div>
                         </div>
@@ -245,25 +256,27 @@
                                     </svg>
                                     <div class="w-full">
                                         <div class="flex items-center border-b border-gray-300">
-                                            <div class="tooltip relative group flex items-center flex-shrink-0 bg-gray-100 rounded-full space-x-1 py-0.5 px-2">
-                                                <p class="font-medium text-xs text-gray-800">Elly holmes</p>
-                                                <button>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 h-3 w-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                                                    </svg>
+                                            <span class="tooltip relative group inline-flex items-center flex-shrink-0 py-0.5 pl-2 pr-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                                Elly holmes
+                                                <button type="button" class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-gray-500 hover:bg-gray-200 hover:text-gray-500 focus:outline-none">
+                                                  <span class="sr-only">Remove small option</span>
+                                                  <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+                                                    <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7" />
+                                                  </svg>
                                                 </button>
                                                 <span class="tooltiptext absolute z-10 -top-10 -left-1/2 whitespace-nowrap hidden bg-black text-white rounded-md group-hover:block py-1 px-2">11email@email.com / 07726374819</span>
-                                            </div>
+                                            </span>
 
-                                            <div class="tooltip relative group flex items-center flex-shrink-0 bg-gray-100 rounded-full space-x-1 py-0.5 px-2">
-                                                <p class="font-medium text-xs text-gray-800">Elly holmes</p>
-                                                <button>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 h-3 w-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                                                    </svg>
+                                            <span class="tooltip relative group inline-flex items-center flex-shrink-0 py-0.5 pl-2 pr-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                                Elly holmes
+                                                <button type="button" class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-gray-500 hover:bg-gray-200 hover:text-gray-500 focus:outline-none">
+                                                  <span class="sr-only">Remove small option</span>
+                                                  <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+                                                    <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7" />
+                                                  </svg>
                                                 </button>
                                                 <span class="tooltiptext absolute z-10 -top-10 -left-1/2 whitespace-nowrap hidden bg-black text-white rounded-md group-hover:block py-1 px-2">22email@email.com / 07726374819</span>
-                                            </div>
+                                            </span>
 
                                             <input class="border-none w-full focus:outline-none text-sm pb-1 px-2" type="text" name="" id="" placeholder="Type to assign">
                                         </div>
@@ -275,7 +288,9 @@
 
                                 <!-- edit btn -->
                                 <div class="flex justify-end">
-                                    <a class="font-medium text-xs border rounded inline-block py-1.5 px-3 mb-2" href="#">Edit</a>
+                                    <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none">
+                                        Edit
+                                      </button>
                                 </div>
                             </div>
                         </div>
@@ -329,7 +344,9 @@
 
                                 <!-- edit btn -->
                                 <div class="flex justify-end space-x-1.5">
-                                    <a class="font-medium text-xs border rounded inline-block py-1.5 px-3 mb-2" href="#">Edit</a>
+                                    <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none">
+                                        Edit
+                                      </button>
                                 </div>
                             </div>
                         </div>

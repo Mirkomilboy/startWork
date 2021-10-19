@@ -52,6 +52,7 @@ const dropContent = document.querySelector('.dropContent');
 
 if(dropBtn) {
   dropBtn.addEventListener('click', function() {
+    console.log('yes');
     dropContent.classList.toggle('hidden');
   })
 }
